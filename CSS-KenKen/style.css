@@ -6,15 +6,16 @@ html {
   font-size: 10px;
 }
 body{
-  height: 650px;
-  width: 650px;
-  margin: 5px;
-  background-color: aquamarine;
+  height: 800px;
+  width: 800px;
+  margin: 10px;
+  background-color: rgb(165, 127, 255);
 }
 .grid{
   display: grid;
-  grid-template-columns: (1fr);
-  grid-template-rows: (1fr);
+  grid-template-columns: (4,1fr);
+  grid-template-rows: (4,1fr);
+  border: .5 rem solid black;
 }
 .grid-items{
   border: .1 rem solid grey;
@@ -34,13 +35,17 @@ body{
   left: 0%;
 }
 .special{border: none;
-font-size: 2rem;}
+font-size: 2 rem;}
 .answer{
   height: 50%;
   width: 50%;
   text-align: center;
 
 }
- @media
+ @media only screen and (min-width: 475px) {
+  #html {
+  font-size: 16px
+  }
+ }
   
 
